@@ -28,7 +28,44 @@
 
 	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 
-		<div class="container">
+		<?php if (is_single()) { ?>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="cate">
+						<h2>Categories</h2>
+						<div class="crossedbg"></div>
+						<div class="ul-cate">
+							<ul>
+								<?php $catID = get_terms('category');
+								foreach ($catID as $key => $value) { ?>
+
+									<li class="cate-name"><a href="http://wordpress.local/category/<?= $value->slug ?>"><?php echo $value->name ?></a></li>
+								<?php } ?>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					<div class="entry-content">
+
+						<?php
+						if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+							the_excerpt();
+						} else {
+							the_content(__('Continue reading', 'twentytwenty'));
+						}
+						?>
+
+					</div>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+
+		<?php
+		} else { ?>
 			<div class="entry-content">
 
 				<?php
@@ -40,7 +77,9 @@
 				?>
 
 			</div>
-		</div>
+		<?php
+		}
+		?>
 
 		<!-- .entry-content -->
 
