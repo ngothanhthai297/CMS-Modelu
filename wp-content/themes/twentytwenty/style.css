@@ -157,10 +157,10 @@ button#dropdownMenuButton {
     color: black;
 	border: 0;
 }
-ul li a {
+/* ul li a {
     color: #888A9B !important;
     text-decoration: none !important;
-}
+} */
 svg.svg-inline--fa.fa-user-circle.fa-w-16 {
     font-size: 25px;
 }
