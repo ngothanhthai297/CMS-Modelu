@@ -86,7 +86,35 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
 
 			<?php } ?>
 
-			
+			<div class="container">
+				<?php if ($has_sidebar_1 || $has_sidebar_2) { ?>
+
+					<aside class="footer-widgets-outer-wrapper" role="complementary">
+
+						<div class="footer-widgets-wrapper">
+
+							<?php if ($has_sidebar_1) { ?>
+
+								<div class="footer-widgets column-one grid-item">
+									<?php dynamic_sidebar('sidebar-1'); ?>
+								</div>
+
+							<?php } ?>
+
+							<?php if ($has_sidebar_2) { ?>
+
+								<div class="footer-widgets column-two grid-item">
+									<?php dynamic_sidebar('sidebar-2'); ?>
+								</div>
+
+							<?php } ?>
+
+						</div><!-- .footer-widgets-wrapper -->
+
+					</aside><!-- .footer-widgets-outer-wrapper -->
+
+				<?php } ?>
+			</div>
 
 		</div><!-- .footer-inner -->
 
