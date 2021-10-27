@@ -28,7 +28,9 @@ if ( is_singular() ) {
 		 * @param bool Whether to show the categories in header. Default true.
 		 */
 		$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
-		// show category
+		// show category : tam
+		// check show detail
+		
 		if( !is_singular()) {
 			if ( true === $show_categories && has_category() ) {
 				?>

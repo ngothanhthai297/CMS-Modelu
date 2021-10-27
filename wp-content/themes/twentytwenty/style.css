@@ -220,7 +220,53 @@ footer.wp-block-latest-comments__comment-meta a {
 a, path {
 	transition: all 0.15s linear;
 }
+/* Search Tam */
+.primary-menu a {
+	color: #6d6d6d!important;
+}
+button#dropdownMenuButton1 {
+    position: relative;
+    top: 33px;
+	font-weight: 600;
+	right: 15px;
+}
+.dropdown i {
+	position: relative;
+    left: 36px;
+    font-size: 25px;
+    top: 11px;
+}
+.dropdown .btn {
+	color: #6d6d6d;
+    background: white;
+    border: 1px solid white;
+}
+.search-are-html {
+	display: flex;
+	margin-left: 10px;
+}
 
+.search-are-html button {
+	height: 40px;
+	font-size: 10px;
+	margin-left: 5px;
+	text-transform: none;
+	width: 80px;
+	border-radius: 5px;
+	background: white;
+	color: black;
+	border: 1px solid #dcd7ca;
+}
+
+.search-are-html .input-class {
+	height: 40px;
+	border-radius: 5px;
+}
+.description-html {
+	background: #dcd7ca;
+	margin-left: 15px;
+	padding: 35px 15px;
+}
 /* Date format--------------------------------- */
 .headlinesdate {
 	background: #f5ce31;
@@ -3123,7 +3169,7 @@ figure.wp-block-gallery.alignfull {
 	background: #fff;
 	border-radius: 50%;
 	color: #cd2653;
-	content: "”";
+	content: "â€�";
 	display: block;
 	font-size: 6.2rem;
 	font-weight: 500;
@@ -3904,9 +3950,9 @@ div.comment:first-of-type {
 
 /* Widget Base ------------------------------- */
 
-.widget {
+/* .widget {
 	margin-top: 3rem;
-}
+} */
 
 .widget:first-child {
 	margin-top: 0;
@@ -3925,9 +3971,9 @@ div.comment:first-of-type {
 	margin: 0 0 2rem;
 }
 
-.widget li {
+/* .widget li {
 	margin: 2rem 0 0 0;
-}
+} */
 
 .widget li:first-child, .widget li>ul, .widget li>ol {
 	margin-top: 0;
@@ -4104,7 +4150,7 @@ div.comment:first-of-type {
 }
 
 .widget_rss cite::before {
-	content: "— ";
+	content: "â€” ";
 }
 
 /* Widget: Search ---------------------------- */
@@ -4997,7 +5043,8 @@ a.to-the-top>* {
 		margin-top: 0;
 	}
 	.footer-widgets .widget {
-		border-top: none;
+		/* border-top: none;
+		margin-top: 5rem; */
 		padding-top: 0;
 	}
 	.footer-widgets .widget:first-child {
@@ -5567,16 +5614,6 @@ a.to-the-top>* {
 
 section {
 	padding: 60px 0;
-}
-
-.wp-block-group__inner-container h2 {
-	color: white;
-	border-left: 4px solid;
-	padding-left: 10px;
-}
-
-footer.wp-block-latest-comments__comment-meta {
-	color: white;
 }
 
 section .section-title {
