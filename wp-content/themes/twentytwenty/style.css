@@ -102,12 +102,11 @@ body {
 
 /* categories */
 li.cate-name {
-	line-height: 80px !important;
 	color: #7FB1DB;
     line-height: 5rem;
     width: 200px;
     list-style: none;
-    border-bottom: 0.25px solid gray;
+    border-bottom: 1px solid #d9d9d9;
 	padding-bottom: 10px;
 }
 ul li.cate-name a {
@@ -5755,7 +5754,7 @@ section .section-title {
 /* date Trang */
 /* date Trang */
 .post-prev-next .headlinesyears{
-	margin-top: 1rem;
+	margin-top: 2rem;
     margin-left: 7px;
 }
 .post-prev-next .headlinesdates{
@@ -5800,6 +5799,7 @@ section .section-title {
 	justify-content: flex-start;
 }
 .pagination-single .next-post{
+	margin-top: 20px;
 	text-align: left;
 	font-size: 1.8rem;
 }
