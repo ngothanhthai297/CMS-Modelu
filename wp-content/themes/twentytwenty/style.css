@@ -206,7 +206,7 @@ h2.border-rg {
 } */
 
 
-.wp-block-group__inner-container li a:nth-child(1):before {
+.footer-widgets .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li a:nth-child(1):before {
     content: "\f101";
     font: normal normal normal 14px/1 FontAwesome;
     top: 3px;
