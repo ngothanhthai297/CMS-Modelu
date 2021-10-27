@@ -21,7 +21,7 @@ if (!is_single()) {
 		<div class="col-md-3">
 			<div class="cate">
 				<h2>Categories</h2>
-				<div class="crossedbg"></div>
+				<div class="crossedbg-categories"></div>
 				<div class="ul-cate">
 					<ul>
 						<?php $catID = get_terms('category');
@@ -104,7 +104,11 @@ if (!is_single()) {
 			</article><!-- .post -->
 		</div>
 		<div class="col-md-3">
+			<div class="rp-box">
+				<div class="crossedbg"></div>
+				<?php dynamic_sidebar('sidebar-3'); ?>
 
+			</div>
 		</div>
 	</div>
 <?php } ?>
