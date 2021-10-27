@@ -268,7 +268,7 @@ a, path {
 }
 .overviewline {
 	border-bottom: 1px solid #cecece;
-    margin: 25px 0 30px;
+    margin: 73px 0 30px;
     position: relative;
 } 
 .overviewline::before {
@@ -5659,23 +5659,23 @@ section .section-title {
 	}
 }
 /* date Trang */
-.post-prev-next .headlinesyear{
+.post-prev-next .headlinesyears{
 	margin-top: 1rem;
     margin-left: 7px;
 }
-.post-prev-next .headlinesdate{
+.post-prev-next .headlinesdates{
 	display: flex;
 }
-.post-prev-next .headlinesdate a{
+.post-prev-next .headlinesdates a{
 	text-decoration: none;
 }
-.post-prev-next .headlinesday{
+.post-prev-next .headlinesdays{
 	border-bottom: 1px solid black;
 }
 
 /* panigation Trang */
 .pagination-single-inner .post-meta-wrapper{
-	max-width: 20rem !important;
+	max-width: 12rem !important;
 }
 .pagination-single-inner  a{
 	justify-content: flex-end;
@@ -5696,4 +5696,20 @@ section .section-title {
 }
 .post-prev-next .post-meta-wrapper {
 	margin-top: 0;
+}
+.pagination-single {
+	margin-top: 34px !important;
+	margin-left: 0px !important;
+}
+.pagination-single .post-meta-single-top .post-meta {
+	justify-content: flex-start;
+}
+.pagination-single .next-post{
+	text-align: left;
+	font-size: 1.8rem;
+}
+.pagination-single .previous-post{
+	text-align: left;
+	font-size: 1.8rem;
+	margin-top: 10px;
 }

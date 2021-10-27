@@ -73,7 +73,7 @@ if ( is_singular() ) {
 		if(! is_singular()) {
 			twentytwenty_the_post_meta( get_the_ID(), 'single-top');
 		} else {
-			twentytwenty_the_post_meta('single-top');
+			// twentytwenty_the_post_meta('single-top');
 		}
 		
 		?>
