@@ -5658,3 +5658,42 @@ section .section-title {
 		margin-bottom: 10px;
 	}
 }
+/* date Trang */
+.post-prev-next .headlinesyear{
+	margin-top: 1rem;
+    margin-left: 7px;
+}
+.post-prev-next .headlinesdate{
+	display: flex;
+}
+.post-prev-next .headlinesdate a{
+	text-decoration: none;
+}
+.post-prev-next .headlinesday{
+	border-bottom: 1px solid black;
+}
+
+/* panigation Trang */
+.pagination-single-inner .post-meta-wrapper{
+	max-width: 20rem !important;
+}
+.pagination-single-inner  a{
+	justify-content: flex-end;
+	color: #000;
+	font-weight: normal; 
+    letter-spacing: 0;
+}
+.pagination-single-inner .previous-post{
+	display: block;
+}
+.pagination-single-inner .post-prev-next{
+	display: flex;
+	max-width: 100%;
+	
+}
+.pagination-single-inner{
+	flex-direction: column;
+}
+.post-prev-next .post-meta-wrapper {
+	margin-top: 0;
+}
