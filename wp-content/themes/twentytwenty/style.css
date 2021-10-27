@@ -1156,9 +1156,9 @@ button.toggle {
 
 .search-form {
 	align-items: stretch;
-	display: flex;
-	flex-wrap: nowrap;
-	margin: 0 0 -0.8rem -0.8rem;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 0 -0.8rem -0.8rem;
 }
 
 .search-form .search-field, .search-form .search-submit {
