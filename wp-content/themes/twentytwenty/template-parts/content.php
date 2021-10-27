@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The default template for displaying content
  *
@@ -18,7 +19,20 @@ if (!is_single()) {
 <?php if (is_single()) { ?>
 	<div class="row">
 		<div class="col-md-3">
+			<div class="cate">
+				<h2>Categories</h2>
+				<div class="crossedbg"></div>
+				<div class="ul-cate">
+					<ul>
+						<?php $catID = get_terms('category');
+						foreach ($catID as $key => $value) { ?>
 
+							<li class="cate-name"><a href="http://wordpress.local/category/<?= $value->slug ?>"><?php echo $value->name ?></a></li>
+						<?php } ?>
+					</ul>
+				</div>
+
+			</div>
 		</div>
 		<div class="col-md-6">
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
