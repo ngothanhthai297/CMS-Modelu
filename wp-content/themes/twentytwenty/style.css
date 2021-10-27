@@ -98,7 +98,58 @@ body {
 	letter-spacing: -0.015em;
 	text-align: left;
 }
+/* Customer Categories */
 
+/* categories */
+li.cate-name {
+	line-height: 80px !important;
+	color: #7FB1DB;
+    line-height: 5rem;
+    width: 200px;
+    list-style: none;
+    border-bottom: 0.25px solid gray;
+	padding-bottom: 10px;
+}
+ul li.cate-name a {
+    text-decoration: none;
+    color: #428bca;
+}
+li.cate-name:last-child{
+	border-bottom: 0px solid gray;
+}
+.crossedbg-categories {
+	width: 270px;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.cate {
+	padding-bottom: 1px;
+	margin-left: 20px;
+    width: 321px;
+	margin-top: 90px;
+    height: auto;
+}
+.cate h2{
+	margin-bottom: 6px;
+	font-weight: 500;
+}.cate-name a {
+    font-size: 14px;
+}
+.ul-cate {
+    width: 270px;
+    background: white;
+}
+li.cate-name::before {
+	margin-right: 15px;
+	color: #F5CE31;
+    content: "\f111";
+    font: normal normal normal 10px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    padding-right: 10px;
+    height: 5px;
+}
 /* Footer */
 
 .widget li a {
@@ -134,19 +185,22 @@ h2.border-rg {
 	margin-left: 5px;
 	transition: .5s all ease;
 }
-
+footer.wp-block-latest-comments__comment-meta {
+    color: white;
+}
 /* .wp-block-group__inner-container li:hover a{
     color: #e51000;
 } */
 
-.wp-block-group__inner-container li a:nth-child(1):before {
-	content: "\f101";
-	font: normal normal normal 14px/1 FontAwesome;
-	top: 3px;
-	left: -18px;
-	width: 5px;
-	padding-right: 10px;
-	height: 5px;
+
+.footer-widgets .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li a:nth-child(1):before {
+    content: "\f101";
+    font: normal normal normal 14px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    padding-right: 10px;
+    height: 5px;
 }
 
 .footer-widgets.column-one.grid-item {
@@ -169,6 +223,7 @@ h2.border-rg {
 
 .wp-block-group__inner-container h2 {
 	font-size: 25px;
+	font-weight: 500;
 }
 
 /* Very busy */
@@ -220,7 +275,53 @@ footer.wp-block-latest-comments__comment-meta a {
 a, path {
 	transition: all 0.15s linear;
 }
+/* Search Tam */
+.primary-menu a {
+	color: #6d6d6d!important;
+}
+button#dropdownMenuButton1 {
+    position: relative;
+    top: 33px;
+	font-weight: 600;
+	right: 15px;
+}
+.dropdown i {
+	position: relative;
+    left: 36px;
+    font-size: 25px;
+    top: 11px;
+}
+.dropdown .btn {
+	color: #6d6d6d;
+    background: white;
+    border: 1px solid white;
+}
+.search-are-html {
+	display: flex;
+	margin-left: 10px;
+}
 
+.search-are-html button {
+	height: 40px;
+	font-size: 10px;
+	margin-left: 5px;
+	text-transform: none;
+	width: 80px;
+	border-radius: 5px;
+	background: white;
+	color: black;
+	border: 1px solid #dcd7ca;
+}
+
+.search-are-html .input-class {
+	height: 40px;
+	border-radius: 5px;
+}
+.description-html {
+	background: #dcd7ca;
+	margin-left: 15px;
+	padding: 35px 15px;
+}
 /* Date format--------------------------------- */
 .headlinesdate {
 	background: #f5ce31;
@@ -232,8 +333,10 @@ a, path {
 }
 .headlinesdate {
 	position: absolute;
-    left: 85%;
-    top: 90px;
+    right: 10px;
+    top: 96px;
+	height: 80px;
+
 }
 
 .headlinesdate {
@@ -254,7 +357,7 @@ a, path {
 .headlinesyear {
 	position: relative;
     left: 15px;
-    top: -25px;
+    top: -49px;
 }
 .add-heading {
 	text-align: initial;
@@ -582,8 +685,8 @@ ol ol ol {
 }
 
 li {
-	line-height: 1.5;
-	margin: 0.5rem 0 0 2rem;
+	line-height: 2.5;
+	/* margin: 0.5rem 0 0 2rem; */
 }
 
 li>ul, li>ol {
@@ -3123,7 +3226,7 @@ figure.wp-block-gallery.alignfull {
 	background: #fff;
 	border-radius: 50%;
 	color: #cd2653;
-	content: "”";
+	content: "â€�";
 	display: block;
 	font-size: 6.2rem;
 	font-weight: 500;
@@ -3800,7 +3903,7 @@ div.comment:first-of-type {
 }
 
 .comment-respond #submit {
-	display: block;
+	/* display: block; */
 }
 
 .comment-respond .comments-closed {
@@ -3904,9 +4007,9 @@ div.comment:first-of-type {
 
 /* Widget Base ------------------------------- */
 
-.widget {
+/* .widget {
 	margin-top: 3rem;
-}
+} */
 
 .widget:first-child {
 	margin-top: 0;
@@ -3925,9 +4028,9 @@ div.comment:first-of-type {
 	margin: 0 0 2rem;
 }
 
-.widget li {
+/* .widget li {
 	margin: 2rem 0 0 0;
-}
+} */
 
 .widget li:first-child, .widget li>ul, .widget li>ol {
 	margin-top: 0;
@@ -4104,7 +4207,7 @@ div.comment:first-of-type {
 }
 
 .widget_rss cite::before {
-	content: "— ";
+	content: "â€” ";
 }
 
 /* Widget: Search ---------------------------- */
@@ -4462,8 +4565,8 @@ a.to-the-top>* {
 	
 	}
 	.wp-block-group__inner-container h2 {
-		border-left: thick solid white;
-		color: antiquewhite;
+		border-left: 3px solid white;
+		color: white;
 		padding-left: 5px;
 	}
 	h3,
@@ -4997,7 +5100,8 @@ a.to-the-top>* {
 		margin-top: 0;
 	}
 	.footer-widgets .widget {
-		border-top: none;
+		/* border-top: none;
+		margin-top: 5rem; */
 		padding-top: 0;
 	}
 	.footer-widgets .widget:first-child {
@@ -5569,16 +5673,6 @@ section {
 	padding: 60px 0;
 }
 
-.wp-block-group__inner-container h2 {
-	color: white;
-	border-left: 4px solid;
-	padding-left: 10px;
-}
-
-footer.wp-block-latest-comments__comment-meta {
-	color: white;
-}
-
 section .section-title {
 	text-align: center;
 	color: #007b5e;
@@ -5659,6 +5753,7 @@ section .section-title {
 	}
 }
 /* date Trang */
+/* date Trang */
 .post-prev-next .headlinesyears{
 	margin-top: 1rem;
     margin-left: 7px;
@@ -5712,4 +5807,231 @@ section .section-title {
 	text-align: left;
 	font-size: 1.8rem;
 	margin-top: 10px;
+}
+
+/* recent post */
+.rp-box {
+	position: relative;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li:hover {
+    margin-left: 0px;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a{
+	color: #428bca !important;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li {
+	color: #428bca;
+	text-decoration: none;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom:10px !important;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li:last-child {
+	border-bottom: none;
+}
+
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li::before{
+	content:"\f111";
+	font: normal normal normal 10px/1 FontAwesome;
+	padding-right: 15px;
+	color: #f5ce31;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a:hover{
+	text-decoration: underline !important;
+	color: #2a6496 !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	background: white !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	padding: 20px;
+}
+.cate .crossedbg{
+	position: absolute;
+    top: 11%;
+    width: 67%;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.rp-box .widget_block {
+	margin-top: 0px !important;
+	padding-right: 0px !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts{
+	margin-top: 0px !important;
+	
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container h2{
+	color: black;
+	border: none;
+	padding-left: 0px;
+}
+.rp-box .widget_block .widget-content .wp-block-group{
+	margin-top: 20px;
+}.rp-box {
+	position: relative;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li:hover {
+    margin-left: 0px;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a{
+	color: #428bca !important;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li {
+	color: #428bca;
+	text-decoration: none;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom:15px !important;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li:last-child {
+	border-bottom: none;
+}
+
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li::before{
+	content:"\f111";
+	font: normal normal normal 10px/1 FontAwesome;
+	padding-right: 15px;
+	color: #f5ce31;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a:hover{
+	text-decoration: underline !important;
+	color: #2a6496 !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	background: white !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	padding: 20px;
+}
+.crossedbg{
+	position: absolute;
+	top: 14.7%;
+	left:25px;
+	width: 87%;
+	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.crossedbg-categories{
+	
+}
+.rp-box .widget_block {
+	margin-top: 0px !important;
+	padding-right: 0px !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts{
+	margin-top: 0px !important;
+	
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container h2{
+	color: black;
+	border: none;
+	padding-left: 0px;
+}
+.rp-box .widget_block .widget-content .wp-block-group{
+	margin-top: 90px;
+}
+/* comment */
+.title-comment.active{
+	width: 22%;
+	color: #495057;
+    background-color: #fff;
+	border-style: solid;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.title-comment{
+	border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+	padding: 8px 13px;
+	cursor: pointer;
+}
+.comment-form-comment{
+	padding: 12px 20px;
+    margin-bottom: 0px;
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid rgba(0,0,0,.125);
+	border-top-left-radius: calc(0.5rem - 1px);
+	border-top-right-radius: calc(0.5rem - 1px);
+}
+.comment-form-comment label{
+	margin-bottom:0px !important ;
+}
+.card-header-tabs {
+    margin-right: -10px;
+    margin-bottom: -13px;
+    margin-left: -10px;
+    border-bottom: 0;
+}
+.comment-content{
+	background: white;
+    padding: 20px;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	border-left: 1px solid rgba(0,0,0,.125);
+	border-right: 1px solid rgba(0,0,0,.125);
+	border-bottom-left-radius: calc(0.5rem - 1px);
+	border-bottom-right-radius: calc(0.5rem - 1px);
+
+}
+.comment-content textarea:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%) !important;
+	
+}
+.submit-right .share{
+	margin-top: 20px;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+	text-transform: lowercase;
+	font-size: 1.6rem !important;
+}
+.share:hover{
+	color: #fff;
+    background-color: #0069d9 !important;
+    border-color: #0062cc;
+}
+#comment{
+	border: 1px solid #ced4da;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 89px;
+	border-radius: .25rem;
+	padding: 6px 12px;
+}
+/* .comment-form-comment{
+	margin: 0 !important;
+	border-bottom: red solid 1px;
+} */
+#commentform .form-submit{
+	margin: 0 !important;
+	margin-bottom: -12px;
+}
+/* submit comment */
+.submit-right{
+	text-align: right !important;
+	
+}
+#submit{
+	cursor: pointer;
+	color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+	text-decoration: none;
+	border-radius: .25rem;
+	padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }
