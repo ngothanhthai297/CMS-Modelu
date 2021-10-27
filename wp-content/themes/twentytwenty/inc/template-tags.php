@@ -400,16 +400,16 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 							<?php } ?>
 
 							<?php if (is_singular()) { ?>
-								<div class="headlinesdate">
-									<div class="headlinesdm">
-										<div class="headlinesday">
+								<div class="headlinesdates">
+									<div class="headlinesdms">
+										<div class="headlinesdays">
 											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 0, 1)); ?></a>
 										</div>
-										<div class="headlinesmonth">
+										<div class="headlinesmonths">
 											<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 2, 1)); ?></a>
 										</div>
 									</div>
-									<div class="headlinesyear">
+									<div class="headlinesyears">
 										<a href="<?php the_permalink(); ?>"><?php the_time(substr(get_option('date_format'), 4, 6)); ?></a>
 									</div>
 								</div>
