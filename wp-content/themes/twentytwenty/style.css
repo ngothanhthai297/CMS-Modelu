@@ -220,7 +220,53 @@ footer.wp-block-latest-comments__comment-meta a {
 a, path {
 	transition: all 0.15s linear;
 }
+/* Search Tam */
+.primary-menu a {
+	color: #6d6d6d!important;
+}
+button#dropdownMenuButton1 {
+    position: relative;
+    top: 33px;
+	font-weight: 600;
+	right: 15px;
+}
+.dropdown i {
+	position: relative;
+    left: 36px;
+    font-size: 25px;
+    top: 11px;
+}
+.dropdown .btn {
+	color: #6d6d6d;
+    background: white;
+    border: 1px solid white;
+}
+.search-are-html {
+	display: flex;
+	margin-left: 10px;
+}
 
+.search-are-html button {
+	height: 40px;
+	font-size: 10px;
+	margin-left: 5px;
+	text-transform: none;
+	width: 80px;
+	border-radius: 5px;
+	background: white;
+	color: black;
+	border: 1px solid #dcd7ca;
+}
+
+.search-are-html .input-class {
+	height: 40px;
+	border-radius: 5px;
+}
+.description-html {
+	background: #dcd7ca;
+	margin-left: 15px;
+	padding: 35px 15px;
+}
 /* Date format--------------------------------- */
 .headlinesdate {
 	background: #f5ce31;

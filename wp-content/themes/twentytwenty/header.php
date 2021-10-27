@@ -178,7 +178,7 @@
 								Account
 							</button>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="<?php esc_url( get_permalink());  ?>/wp-admin">Admin</a>
 								<a class="dropdown-item" href="#">Another action</a>
 								<a class="dropdown-item" href="#">Something else here</a>
 							</div>
