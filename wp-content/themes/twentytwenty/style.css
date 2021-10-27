@@ -181,7 +181,9 @@ h2.border-rg {
 	margin-left: 5px;
 	transition: .5s all ease;
 }
-
+footer.wp-block-latest-comments__comment-meta {
+    color: white;
+}
 /* .wp-block-group__inner-container li:hover a{
     color: #e51000;
 } */
@@ -216,6 +218,7 @@ h2.border-rg {
 
 .wp-block-group__inner-container h2 {
 	font-size: 25px;
+	font-weight: 500;
 }
 
 /* Very busy */
@@ -325,8 +328,10 @@ button#dropdownMenuButton1 {
 }
 .headlinesdate {
 	position: absolute;
-    left: 85%;
-    top: 90px;
+    right: 10px;
+    top: 80px;
+	height: 80px;
+
 }
 
 .headlinesdate {
@@ -347,7 +352,7 @@ button#dropdownMenuButton1 {
 .headlinesyear {
 	position: relative;
     left: 15px;
-    top: -25px;
+    top: -49px;
 }
 .add-heading {
 	text-align: initial;
@@ -675,8 +680,8 @@ ol ol ol {
 }
 
 li {
-	line-height: 1.5;
-	margin: 0.5rem 0 0 2rem;
+	line-height: 2.5;
+	/* margin: 0.5rem 0 0 2rem; */
 }
 
 li>ul, li>ol {
@@ -4555,8 +4560,8 @@ a.to-the-top>* {
 	
 	}
 	.wp-block-group__inner-container h2 {
-		border-left: thick solid white;
-		color: antiquewhite;
+		border-left: 3px solid white;
+		color: white;
 		padding-left: 5px;
 	}
 	h3,
