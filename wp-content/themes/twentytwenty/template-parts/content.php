@@ -27,7 +27,7 @@ if (!is_single()) {
 						<?php $catID = get_terms('category');
 						foreach ($catID as $key => $value) { ?>
 
-							<li class="cate-name"><a href="http://wordpress.local/category/<?= $value->slug ?>"><?php echo $value->name ?></a></li>
+							<li class="cate-name"><a href="<?= "http://" . $_SERVER["HTTP_HOST"]."/category/".$value->slug ?>"><?php echo $value->name ?></a></li>
 						<?php } ?>
 					</ul>
 				</div>
