@@ -5533,8 +5533,11 @@ a.to-the-top>* {
 	.comment-reply-title {
 		font-size: 5.6rem;
 		line-height: 1.2;
-		margin-bottom: 6rem;
+		margin-bottom: 0px;
 	}
+.comment-respond .comment-reply-title{
+	height: 0;
+}
 	.comment-respond p.comment-notes, .comment-respond p.logged-in-as {
 		margin: -4rem 0 6rem 0;
 	}
@@ -5922,7 +5925,7 @@ section .section-title {
 }
 .crossedbg{
 	position: absolute;
-	top: 14.7%;
+	top: 16%;
 	left:25px;
 	width: 87%;
 	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
