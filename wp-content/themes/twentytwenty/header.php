@@ -84,9 +84,11 @@
 						?>
                     </div>
                     <div class="search-are-html">
-                        <input type="text" name="keyword" class="input-class" id="exampleInputPassword1"
-                            placeholder="Search">
-                        <button type="button" class="btn btn-outline-secondary">Submit</button>
+                        <form action="<?php esc_url( get_permalink()); ?>" method="get" class="search-form">
+                            <input type="text" name="s" class="input-class" id="exampleInputPassword1"
+                                placeholder="Search">
+                            <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                        </form>
                     </div>
 
                 </div><!-- .header-titles -->
@@ -201,10 +203,16 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item"
-                                        href="<?php esc_url( get_permalink()); ?>/wp-admin">Admin</a>
+                                        href="<?php esc_url( get_permalink()); ?>/wp-admin">Login</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="<?php esc_url( get_permalink()); ?>/wp-admin/profile.php">Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo esc_url( wp_logout_url() ); ?>">Logout</a>
+                                </li>
+
                             </ul>
                         </div>
 
