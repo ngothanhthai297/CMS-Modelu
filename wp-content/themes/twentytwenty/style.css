@@ -299,7 +299,9 @@ button#dropdownMenuButton1 {
 	display: flex;
 	margin-left: 10px;
 }
-
+.search-are-html .search-form {
+	display: contents;
+}
 .search-are-html button {
 	height: 40px;
 	font-size: 10px;
