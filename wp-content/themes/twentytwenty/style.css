@@ -130,8 +130,9 @@ li.cate-name:last-child{
 }
 .cate h2{
 	margin-bottom: 6px;
-	font-weight: 500;
-}.cate-name a {
+    font-weight: 800;
+}
+.cate-name a {
     font-size: 14px;
 }
 .ul-cate {
@@ -354,6 +355,10 @@ button#dropdownMenuButton1 {
 	position: relative;
     left: -5px;
     top: 12px;
+}
+.headlinesmonth a{
+	margin-top: -8px;
+    padding-bottom: 8px;
 }
 .headlinesyear {
 	position: relative;
@@ -4828,6 +4833,7 @@ a.to-the-top>* {
 	.pagination-single .next-post {
 		flex-direction: row-reverse;
 		text-align: right;
+
 	}
 	.pagination-single .next-post .arrow {
 		margin: 0 0 0 2rem;
@@ -5535,7 +5541,10 @@ a.to-the-top>* {
 	.comment-reply-title {
 		font-size: 5.6rem;
 		line-height: 1.2;
-		margin-bottom: 6rem;
+		margin-bottom: 0px;
+	}
+	.comment-respond .comment-reply-title{
+		height: 0;
 	}
 	.comment-respond p.comment-notes, .comment-respond p.logged-in-as {
 		margin: -4rem 0 6rem 0;
@@ -5809,14 +5818,14 @@ section .section-title {
 	justify-content: flex-start;
 }
 .pagination-single .next-post{
-	margin-top: 20px;
+	margin-top: 27px;
 	text-align: left;
 	font-size: 1.8rem;
 }
 .pagination-single .previous-post{
 	text-align: left;
 	font-size: 1.8rem;
-	margin-top: 10px;
+	margin-top: 26px;
 }
 
 /* recent post */
@@ -5924,14 +5933,11 @@ section .section-title {
 }
 .crossedbg{
 	position: absolute;
-	top: 14.7%;
+	top: 14%;
 	left:25px;
 	width: 87%;
 	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
     height: 15px;
-}
-.crossedbg-categories{
-	
 }
 .rp-box .widget_block {
 	margin-top: 0px !important;
@@ -5945,6 +5951,9 @@ section .section-title {
 	color: black;
 	border: none;
 	padding-left: 0px;
+    font-weight: 800;
+	font-size: 2.8rem !important;
+	margin-bottom: 20px;
 }
 .rp-box .widget_block .widget-content .wp-block-group{
 	margin-top: 90px;
@@ -6005,7 +6014,7 @@ section .section-title {
     padding-bottom: 6px !important;
     padding-left: 12px !important;
     padding-right: 12px !important;
-	text-transform: lowercase;
+	text-transform: capitalize;
 	font-size: 1.6rem !important;
 }
 .share:hover{
