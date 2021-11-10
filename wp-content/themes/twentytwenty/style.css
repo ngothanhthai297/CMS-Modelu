@@ -98,7 +98,58 @@ body {
 	letter-spacing: -0.015em;
 	text-align: left;
 }
+/* Customer Categories */
 
+/* categories */
+li.cate-name {
+	color: #7FB1DB;
+    line-height: 5rem;
+    width: 200px;
+    list-style: none;
+    border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 10px;
+}
+ul li.cate-name a {
+    text-decoration: none;
+    color: #428bca;
+}
+li.cate-name:last-child{
+	border-bottom: 0px solid gray;
+}
+.crossedbg-categories {
+	width: 270px;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.cate {
+	padding-bottom: 1px;
+	margin-left: 20px;
+    width: 321px;
+	margin-top: 90px;
+    height: auto;
+}
+.cate h2{
+	margin-bottom: 6px;
+    font-weight: 800;
+}
+.cate-name a {
+    font-size: 14px;
+}
+.ul-cate {
+    width: 270px;
+    background: white;
+}
+li.cate-name::before {
+	margin-right: 15px;
+	color: #F5CE31;
+    content: "\f111";
+    font: normal normal normal 10px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    padding-right: 10px;
+    height: 5px;
+}
 /* Footer */
 
 .widget li a {
@@ -134,19 +185,22 @@ h2.border-rg {
 	margin-left: 5px;
 	transition: .5s all ease;
 }
-
+footer.wp-block-latest-comments__comment-meta {
+    color: white;
+}
 /* .wp-block-group__inner-container li:hover a{
     color: #e51000;
 } */
 
-.wp-block-group__inner-container li a:nth-child(1):before {
-	content: "\f101";
-	font: normal normal normal 14px/1 FontAwesome;
-	top: 3px;
-	left: -18px;
-	width: 5px;
-	padding-right: 10px;
-	height: 5px;
+
+.footer-widgets .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li a:nth-child(1):before {
+    content: "\f101";
+    font: normal normal normal 14px/1 FontAwesome;
+    top: 3px;
+    left: -18px;
+    width: 5px;
+    padding-right: 10px;
+    height: 5px;
 }
 
 .footer-widgets.column-one.grid-item {
@@ -169,6 +223,7 @@ h2.border-rg {
 
 .wp-block-group__inner-container h2 {
 	font-size: 25px;
+	font-weight: 500;
 }
 
 /* Very busy */
@@ -280,8 +335,10 @@ button#dropdownMenuButton1 {
 }
 .headlinesdate {
 	position: absolute;
-    left: 85%;
-    top: 90px;
+    right: 10px;
+    top: 96px;
+	height: 80px;
+
 }
 
 .headlinesdate {
@@ -299,10 +356,14 @@ button#dropdownMenuButton1 {
     left: -5px;
     top: 12px;
 }
+.headlinesmonth a{
+	margin-top: -8px;
+    padding-bottom: 8px;
+}
 .headlinesyear {
 	position: relative;
     left: 15px;
-    top: -25px;
+    top: -49px;
 }
 .add-heading {
 	text-align: initial;
@@ -316,7 +377,7 @@ button#dropdownMenuButton1 {
 }
 .overviewline {
 	border-bottom: 1px solid #cecece;
-    margin: 25px 0 30px;
+    margin: 73px 0 30px;
     position: relative;
 } 
 .overviewline::before {
@@ -630,8 +691,8 @@ ol ol ol {
 }
 
 li {
-	line-height: 1.5;
-	margin: 0.5rem 0 0 2rem;
+	line-height: 2.5;
+	/* margin: 0.5rem 0 0 2rem; */
 }
 
 li>ul, li>ol {
@@ -1277,9 +1338,9 @@ button.toggle {
 
 .search-form {
 	align-items: stretch;
-	display: flex;
-	flex-wrap: nowrap;
-	margin: 0 0 -0.8rem -0.8rem;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 0 -0.8rem -0.8rem;
 }
 
 .search-form .search-field, .search-form .search-submit {
@@ -2608,7 +2669,7 @@ h1.entry-title, h2.entry-title {
     padding-left: 0;
 }
 .list_new_view .top_news_block_desc .topnewstime {
-    padding-left: 30px;
+    padding-left: 15px;
 }
 
 .topnewstime > .topnewsdate {
@@ -3848,7 +3909,7 @@ div.comment:first-of-type {
 }
 
 .comment-respond #submit {
-	display: block;
+	/* display: block; */
 }
 
 .comment-respond .comments-closed {
@@ -4510,8 +4571,8 @@ a.to-the-top>* {
 	
 	}
 	.wp-block-group__inner-container h2 {
-		border-left: thick solid white;
-		color: antiquewhite;
+		border-left: 3px solid white;
+		color: white;
 		padding-left: 5px;
 	}
 	h3,
@@ -4772,6 +4833,7 @@ a.to-the-top>* {
 	.pagination-single .next-post {
 		flex-direction: row-reverse;
 		text-align: right;
+
 	}
 	.pagination-single .next-post .arrow {
 		margin: 0 0 0 2rem;
@@ -5402,12 +5464,9 @@ a.to-the-top>* {
 @media ( min-width: 1220px) {
 	/* Element Base -------------------------- */
 	/* TITLES */
-
-	h1,
-	.heading-size-1 {
+	h1, .heading-size-1 {
 		font-size: 4rem;
 	}
-
 	/* Helper Classes ------------------------ */
 	/* Site Header --------------------------- */
 	/* PRIMARY MENU */
@@ -5482,7 +5541,10 @@ a.to-the-top>* {
 	.comment-reply-title {
 		font-size: 5.6rem;
 		line-height: 1.2;
-		margin-bottom: 6rem;
+		margin-bottom: 0px;
+	}
+	.comment-respond .comment-reply-title{
+		height: 0;
 	}
 	.comment-respond p.comment-notes, .comment-respond p.logged-in-as {
 		margin: -4rem 0 6rem 0;
@@ -5612,10 +5674,21 @@ a.to-the-top>* {
 }
 
 /* footer update */
+
 /* Footer */
 
 section {
 	padding: 60px 0;
+}
+
+.wp-block-group__inner-container h2 {
+	color: white;
+	border-left: 4px solid;
+	padding-left: 10px;
+}
+
+footer.wp-block-latest-comments__comment-meta {
+	color: white;
 }
 
 section .section-title {
@@ -5698,23 +5771,24 @@ section .section-title {
 	}
 }
 /* date Trang */
-.post-prev-next .headlinesyear{
-	margin-top: 1rem;
+/* date Trang */
+.post-prev-next .headlinesyears{
+	margin-top: 2rem;
     margin-left: 7px;
 }
-.post-prev-next .headlinesdate{
+.post-prev-next .headlinesdates{
 	display: flex;
 }
-.post-prev-next .headlinesdate a{
+.post-prev-next .headlinesdates a{
 	text-decoration: none;
 }
-.post-prev-next .headlinesday{
+.post-prev-next .headlinesdays{
 	border-bottom: 1px solid black;
 }
 
 /* panigation Trang */
 .pagination-single-inner .post-meta-wrapper{
-	max-width: 20rem !important;
+	max-width: 12rem !important;
 }
 .pagination-single-inner  a{
 	justify-content: flex-end;
@@ -5735,4 +5809,248 @@ section .section-title {
 }
 .post-prev-next .post-meta-wrapper {
 	margin-top: 0;
+}
+.pagination-single {
+	margin-top: 34px !important;
+	margin-left: 0px !important;
+}
+.pagination-single .post-meta-single-top .post-meta {
+	justify-content: flex-start;
+}
+.pagination-single .next-post{
+	margin-top: 27px;
+	text-align: left;
+	font-size: 1.8rem;
+}
+.pagination-single .previous-post{
+	text-align: left;
+	font-size: 1.8rem;
+	margin-top: 26px;
+}
+
+/* recent post */
+.rp-box {
+	position: relative;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li:hover {
+    margin-left: 0px;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a{
+	color: #428bca !important;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li {
+	color: #428bca;
+	text-decoration: none;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom:10px !important;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li:last-child {
+	border-bottom: none;
+}
+
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li::before{
+	content:"\f111";
+	font: normal normal normal 10px/1 FontAwesome;
+	padding-right: 15px;
+	color: #f5ce31;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a:hover{
+	text-decoration: underline !important;
+	color: #2a6496 !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	background: white !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	padding: 20px;
+}
+.cate .crossedbg{
+	position: absolute;
+    top: 11%;
+    width: 67%;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.rp-box .widget_block {
+	margin-top: 0px !important;
+	padding-right: 0px !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts{
+	margin-top: 0px !important;
+	
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container h2{
+	color: black;
+	border: none;
+	padding-left: 0px;
+}
+.rp-box .widget_block .widget-content .wp-block-group{
+	margin-top: 20px;
+}.rp-box {
+	position: relative;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li:hover {
+    margin-left: 0px;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a{
+	color: #428bca !important;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li {
+	color: #428bca;
+	text-decoration: none;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom:15px !important;
+	font-weight: initial;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li:last-child {
+	border-bottom: none;
+}
+
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li::before{
+	content:"\f111";
+	font: normal normal normal 10px/1 FontAwesome;
+	padding-right: 15px;
+	color: #f5ce31;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a:hover{
+	text-decoration: underline !important;
+	color: #2a6496 !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	background: white !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
+	padding: 20px;
+}
+.crossedbg{
+	position: absolute;
+	top: 14%;
+	left:25px;
+	width: 87%;
+	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+}
+.rp-box .widget_block {
+	margin-top: 0px !important;
+	padding-right: 0px !important;
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts{
+	margin-top: 0px !important;
+	
+}
+.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container h2{
+	color: black;
+	border: none;
+	padding-left: 0px;
+    font-weight: 800;
+	font-size: 2.8rem !important;
+	margin-bottom: 20px;
+}
+.rp-box .widget_block .widget-content .wp-block-group{
+	margin-top: 90px;
+}
+/* comment */
+.title-comment.active{
+	width: 22%;
+	color: #495057;
+    background-color: #fff;
+	border-style: solid;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.title-comment{
+	border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+	padding: 8px 13px;
+	cursor: pointer;
+}
+.comment-form-comment{
+	padding: 12px 20px;
+    margin-bottom: 0px;
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid rgba(0,0,0,.125);
+	border-top-left-radius: calc(0.5rem - 1px);
+	border-top-right-radius: calc(0.5rem - 1px);
+}
+.comment-form-comment label{
+	margin-bottom:0px !important ;
+}
+.card-header-tabs {
+    margin-right: -10px;
+    margin-bottom: -13px;
+    margin-left: -10px;
+    border-bottom: 0;
+}
+.comment-content{
+	background: white;
+    padding: 20px;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	border-left: 1px solid rgba(0,0,0,.125);
+	border-right: 1px solid rgba(0,0,0,.125);
+	border-bottom-left-radius: calc(0.5rem - 1px);
+	border-bottom-right-radius: calc(0.5rem - 1px);
+
+}
+.comment-content textarea:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%) !important;
+	
+}
+.submit-right .share{
+	margin-top: 20px;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+	text-transform: capitalize;
+	font-size: 1.6rem !important;
+}
+.share:hover{
+	color: #fff;
+    background-color: #0069d9 !important;
+    border-color: #0062cc;
+}
+#comment{
+	border: 1px solid #ced4da;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 89px;
+	border-radius: .25rem;
+	padding: 6px 12px;
+}
+/* .comment-form-comment{
+	margin: 0 !important;
+	border-bottom: red solid 1px;
+} */
+#commentform .form-submit{
+	margin: 0 !important;
+	margin-bottom: -12px;
+}
+/* submit comment */
+.submit-right{
+	text-align: right !important;
+	
+}
+#submit{
+	cursor: pointer;
+	color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+	text-decoration: none;
+	border-radius: .25rem;
+	padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }

@@ -26,7 +26,6 @@ if ( $next_post || $prev_post ) {
 
 		<!-- <hr class="styled-separator is-style-wide" aria-hidden="true" /> -->
 
-		<div class="container">
 			<div class="pagination-single-inner">
 				<div class="pagination-single-next post-prev-next">
 					<?php if ($next_post) {
@@ -57,7 +56,6 @@ if ( $next_post || $prev_post ) {
 
 				</div>
 			</div><!-- .pagination-single-inner -->
-		</div>
 
 		<!-- <hr class="styled-separator is-style-wide" aria-hidden="true" /> -->
 
