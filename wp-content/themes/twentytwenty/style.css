@@ -1381,8 +1381,8 @@ button.toggle {
 }
 .icon-search{
 	position: absolute;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 22px;
+	font-size: 25px;
 }
 .search-form .search-submit:focus, .search-form .search-submit:hover {
 	text-decoration: none;
@@ -1499,6 +1499,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 	font-size: 1.8rem;
 	font-weight: 500;
 	display: none;
+	text-decoration: none;
 	letter-spacing: -0.0311em;
 	transition: all 0.15s linear;
 }
@@ -2217,10 +2218,10 @@ button.search-untoggle {
 	font-size: 2rem;
 	letter-spacing: -0.0277em;
 	height: 8.4rem;
-	margin: 0 0 0 -2rem;
+	margin: 0 0 0 2rem;
 	max-width: calc(100% + 2rem);
 	padding: 0 0 0 2rem;
-	width: calc(100% + 2rem);
+	width: calc(100% + 3rem);
 }
 
 .search-modal .search-field::-webkit-input-placeholder {
@@ -4687,8 +4688,8 @@ a.to-the-top>* {
 	}
 	.search-modal .search-field {
 		border: none;
-		font-size: 3.2rem;
-		height: 14rem;
+		font-size: 2.2rem;
+    	height: 8rem;
 	}
 	.search-modal .search-field::-moz-placeholder {
 		line-height: 4.375;
