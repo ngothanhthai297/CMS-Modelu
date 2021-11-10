@@ -105,8 +105,9 @@ function twentytwenty_site_description( $echo = true ) {
 	if ( ! $description ) {
 		return;
 	}
-
-	$wrapper = '<div class="site-description">%s</div><!-- .site-description -->';
+	$link_home = esc_url( get_home_url( null, '/' ));
+	
+	$wrapper = '<a  href="'. $link_home .'" class="site-description">%s</a><!-- .site-description -->';
 
 	$html = sprintf( $wrapper, esc_html( $description ) );
 
