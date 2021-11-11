@@ -5844,7 +5844,7 @@ section .section-title {
 	text-decoration: none;
 	font-size: 14px;
 	border-bottom: 1px solid #d9d9d9;
-	padding-bottom:10px !important;
+	padding:10px 15px !important;
 	font-weight: initial;
 }
 .rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li:last-child {
@@ -5865,69 +5865,7 @@ section .section-title {
 	background: white !important;
 }
 .rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
-	padding: 20px;
-}
-.cate .crossedbg{
-	position: absolute;
-    top: 11%;
-    width: 67%;
-    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
-    height: 15px;
-}
-.rp-box .widget_block {
-	margin-top: 0px !important;
-	padding-right: 0px !important;
-}
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts{
-	margin-top: 0px !important;
-	
-}
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container h2{
-	color: black;
-	border: none;
-	padding-left: 0px;
-}
-.rp-box .widget_block .widget-content .wp-block-group{
-	margin-top: 20px;
-}.rp-box {
-	position: relative;
-}
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container li:hover {
-    margin-left: 0px;
-}
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a{
-	color: #428bca !important;
-	text-decoration: none;
-	font-size: 14px;
-	font-weight: initial;
-}
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li {
-	color: #428bca;
-	text-decoration: none;
-	font-size: 14px;
-	border-bottom: 1px solid #d9d9d9;
-	padding-bottom:15px !important;
-	font-weight: initial;
-}
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li:last-child {
-	border-bottom: none;
-}
-
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li::before{
-	content:"\f111";
-	font: normal normal normal 10px/1 FontAwesome;
-	padding-right: 15px;
-	color: #f5ce31;
-}
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts li a:hover{
-	text-decoration: underline !important;
-	color: #2a6496 !important;
-}
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
-	background: white !important;
-}
-.rp-box .widget_block .widget-content .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts {
-	padding: 20px;
+	padding: 15px;
 }
 .crossedbg{
 	position: absolute;
