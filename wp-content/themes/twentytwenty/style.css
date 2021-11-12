@@ -203,7 +203,7 @@ footer.wp-block-latest-comments__comment-meta {
     top: 3px;
     left: -18px;
     width: 5px;
-    padding-right: 10px;
+    padding-right: 5px;
     height: 5px;
 }
 
@@ -2679,7 +2679,10 @@ h1.entry-title, h2.entry-title {
     padding-left: 0;
 }
 .list_new_view .top_news_block_desc .topnewstime {
-    /* padding-left: 15px; */
+    padding-left: 27px;
+}
+.list_new_view .top_news_block_desc .topnewstime.is-search{
+	padding-left: 0;
 }
 
 .topnewstime > .topnewsdate {
@@ -2704,6 +2707,10 @@ h1.entry-title, h2.entry-title {
 .shortdesc {
     border-left: 1px solid #666;
 	margin-top: 12px;
+	padding-left: 20px;
+}
+.shortdesc.is-search{
+	padding-right: 0;
 }
 .top_news_block_desc h4{
 	line-height: 25px;
