@@ -1391,6 +1391,7 @@ button.toggle {
 	position: absolute;
     padding-top: 22px;
 	font-size: 25px;
+	padding-left: 18px;
 }
 .search-form .search-submit:focus, .search-form .search-submit:hover {
 	text-decoration: none;
@@ -2678,9 +2679,11 @@ h1.entry-title, h2.entry-title {
     padding-left: 0;
 }
 .list_new_view .top_news_block_desc .topnewstime {
-    /* padding-left: 15px; */
+    padding-left: 27px;
 }
-
+.list_new_view .top_news_block_desc .topnewstime.is-search{
+	padding-left: 0;
+}
 .topnewstime > .topnewsdate {
     font-family: 'Prata', serif;
     /* font-size: 3.1em; */
@@ -2691,7 +2694,7 @@ h1.entry-title, h2.entry-title {
 .topnewstime > .topnewsmonth {
     text-transform: uppercase;
     /* font-size: 0.9em; */
-    font-size: 12px;
+    font-size: 18px;
     margin-left: 15px;
 }
 @media (min-width: 768px)
@@ -2703,6 +2706,13 @@ h1.entry-title, h2.entry-title {
 .shortdesc {
     border-left: 1px solid #666;
 	margin-top: 12px;
+	padding-left: 20px;
+}
+.shortdesc.is-search{
+	padding-right: 0;
+}
+.shortdesc h4{
+	padding-bottom: 10px;
 }
 .top_news_block_desc h4{
 	line-height: 25px;

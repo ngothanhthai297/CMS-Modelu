@@ -174,11 +174,11 @@ if (!is_search()) {
 								</div>
 								<div class="col-md-7 top_news_block_desc">
 								<div class="row">
-									<div class="col-md-3 col-xs-3 topnewstime">
+									<div class="col-md-3 col-xs-3 topnewstime is-search">
 										<span class="topnewsdate"><?php echo $date ?></span><br>
 										<span class="topnewsmonth">Tháng <?php echo $month ?></span><br>
 									</div>
-									<div class="col-md-9 col-xs-9 shortdesc">
+									<div class="col-md-9 col-xs-9 shortdesc is-search">
 										<h4 class="entry-title">
 											<a href="<?php echo esc_url(get_permalink()) ?>"><?php echo $post->post_title ?></a>
 										</h4>
