@@ -1387,8 +1387,11 @@ button.toggle {
 }
 .icon-search{
 	position: absolute;
-    padding-top: 22px;
+    padding-top: 19px;
 	font-size: 25px;
+}
+.icon-search i{
+	margin-left: 17px;
 }
 .search-form .search-submit:focus, .search-form .search-submit:hover {
 	text-decoration: none;
@@ -2689,7 +2692,7 @@ h1.entry-title, h2.entry-title {
 .topnewstime > .topnewsmonth {
     text-transform: uppercase;
     /* font-size: 0.9em; */
-    font-size: 16px;
+    font-size: 12px;
     margin-left: 15px;
 }
 @media (min-width: 768px)
@@ -2701,11 +2704,9 @@ h1.entry-title, h2.entry-title {
 .shortdesc {
     border-left: 1px solid #666;
 	margin-top: 12px;
-	padding-left: 15px;
 }
 .top_news_block_desc h4{
 	line-height: 25px;
-	margin-bottom: 10px;
 }
 .top_news_block_desc h4 a{
 	color: #428bca;
@@ -4340,7 +4341,7 @@ ul.footer-social li {
 /* Footer Widgets ---------------------------- */
 
 .footer-widgets-outer-wrapper {
-	border-bottom: 0.1rem solid #dedfdf;
+	/* border-bottom: 0.1rem solid #dedfdf; */
 }
 
 .footer-widgets+.footer-widgets {
@@ -5127,7 +5128,7 @@ a.to-the-top>* {
 	/* FOOTER BOTTOM */
 	#site-footer {
 		font-size: 1.8rem;
-		padding: 4.3rem 0;
+		padding: 1.3rem 0;
 	}
 	.footer-credits {
 		display: flex;
