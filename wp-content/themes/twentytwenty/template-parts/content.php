@@ -163,11 +163,11 @@ if (!is_search()) {
 				// var_dump($post);
 				//die();
 		?>
-				<div class="list_news">
+				<div class="list_news" style="max-width: 50%;">
 					<div class="list_new_view">
 						<div class="row">
 							<?php if (is_search()){?>
-								<div class="col-md-5">
+								<div class="col-md-4">
 									<div class="top_news_block_thumb">
 										<img src="<?= get_the_post_thumbnail_url($post) ?>">
 									</div>
@@ -176,13 +176,13 @@ if (!is_search()) {
 								<div class="row">
 									<div class="col-md-3 col-xs-3 topnewstime">
 										<span class="topnewsdate"><?php echo $date ?></span><br>
-										<span class="topnewsmonth">Thang <?php echo $month ?></span><br>
+										<span class="topnewsmonth">Tháng <?php echo $month ?></span><br>
 									</div>
 									<div class="col-md-9 col-xs-9 shortdesc">
 										<h4 class="entry-title">
 											<a href="<?php echo esc_url(get_permalink()) ?>"><?php echo $post->post_title ?></a>
 										</h4>
-										<p><?php echo substr($post->post_content, 0, 100);  ?><a href="<?php echo esc_url(get_permalink()) ?>">[...]</a></p>
+										<p><?php echo strip_tags(substr($post->post_content, 0, 200))  ?><a href="<?php echo esc_url(get_permalink()) ?>">[...]</a></p>
 									</div>
 
 								</div>
@@ -198,7 +198,7 @@ if (!is_search()) {
 										<h4 class="entry-title">
 											<a href="<?php echo esc_url(get_permalink()) ?>"><?php echo $post->post_title ?></a>
 										</h4>
-										<p><?php echo substr($post->post_content, 0, 100);  ?><a href="<?php echo esc_url(get_permalink()) ?>">[...]</a></p>
+										<p><?php echo strip_tags(substr($post->post_content, 0, 200));?><a href="<?php echo esc_url(get_permalink()) ?>">[...]</a></p>
 									</div>
 
 								</div>
